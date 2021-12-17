@@ -1,39 +1,46 @@
 :root {
     --cl1: #c38fdf;
-
+    --cl2: rgb(64, 56, 134);
 }
 
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    min-height: 100vh;
-    display: flex;
+    display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    padding: 10px 20px; /*put in the 20x35 header*/
-    display: flex;
-    flex-wrap: wrap;
-    top: 0;
-    background-size: cover;
-    width: 100%;
-    height: min-content;
+    padding: 10px;
+    font-size: 15px;
+    background-color: cover;
+    display: inline-block;
 }
 
 .highscore {
-    background: none;
 	color: var(--cl1);
-	border: none;
-	padding: 0;
 	cursor: pointer;
-	outline: none;
-    justify-content: left;
+    text-align: left;
 }
 
-header div .timer {
-    display: flex;
-    align-items: right;
-    justify-content: right;
+#countdown {
+    text-align: right;
+    display: inline;
 }
+
+/* beginning page */
+.centered {
+    margin: 50px auto;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+button {
+    background-color: var(--cl2);
+    color: white;
+    border-radius: 10px;
+}
+
+
