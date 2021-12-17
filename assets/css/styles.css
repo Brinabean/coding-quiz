@@ -1,0 +1,39 @@
+:root {
+    --cl1: #c38fdf;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 10px 20px; /*put in the 20x35 header*/
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    background-size: cover;
+    width: 100%;
+    height: min-content;
+}
+
+.highscore {
+    background: none;
+	color: var(--cl1);
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+    justify-content: left;
+}
+
+header div .timer {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
