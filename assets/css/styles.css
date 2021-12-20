@@ -17,10 +17,7 @@ header {
     font-size: 15px;
     background-color: cover;
     display: inline-block;
-}
-
-.highscore {
-	color: var(--cl1);
+    color: var(--cl1);
 	cursor: pointer;
     text-align: left;
 }
@@ -40,6 +37,10 @@ header {
     text-align: center;
 }
 
+#opening {
+    display: block;
+}
+
 .btn {
     background-color: var(--cl2);
     color: white;
@@ -55,9 +56,10 @@ header {
 .questions {
     background-color: var(--cl3);
     border-style: solid;
+    display: none;
 }
 
-/*#que1 {
+#que1 {
     display: none;
 }
 
@@ -75,8 +77,14 @@ header {
 
 #que5 {
     display: none;
-}*/
+}
 
+#correct {
+    color: black;
+    border-top: 3px solid black;
+    text-align: left;
+    padding: 5px;
+}
 .select-answer {
     color: var(--cl3);
     text-align: left;
@@ -94,9 +102,18 @@ header {
     background-color: var(--cl1);
 }
 
+/*Form*/
+
+form {
+    display: none;
+}
+
+/*Highscores*/
+
 .hs {
     width: 30%;
     text-align: left;
+    display: none;
 }
 
 #highscores {

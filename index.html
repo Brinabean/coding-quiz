@@ -11,12 +11,12 @@
   <body>
       <header>
           <div>
-              <p class="highscore">View high scores </p>
+              <p id="view-hs">View high scores </p>
               <p id="countdown"></p>
       </header>
 
       <!--Begginning screen/start-->
-      <section class="centered">
+      <section class="centered" id="opening">
           <h1>Coding Quiz Challenge</h1>
           <p>This challenge will give you multiple choice coding uestions to test your coding knowledge.
                Answer to the best of your ability and as quickly as possible as you will only have 75 
@@ -27,56 +27,61 @@
 
       <!--questions-->
       <section>
-          <div hidden id="que1"  class="questions">
+          <div id="que1"  class="questions">
             <h2>Question one will be put here _________.</h2>
-            <div name="choices" class="select-answer">
+            <div name="answer"class="select-answer" id="choice">
                 <option value="1">1.Answer</option>
                 <option value="2">2.Answer</option>
                 <option value="3">3.Answer</option>
                 <option value="4">4.Answer</option>
             </div>
           </div>
-          <div hidden id="que2"  class="questions">
-            <h2>Question one will be put here _________.</h2>
-            <div name="choices" class="select-answer">
+          <div id="que2"  class="questions">
+            <h2>Question two will be put here _________.</h2>
+            <div name="answer" class="select-answer" id="choice">
                 <option value="1">1.Answer</option>
                 <option value="2">2.Answer</option>
                 <option value="3">3.Answer</option>
                 <option value="4">4.Answer</option>
             </div>
+            <footer id="correct"></footer>
           </div>
-          <div hidden id="que3"  class="questions">
-            <h2>Question one will be put here _________.</h2>
-            <div name="choices" class="select-answer">
+          <div id="que3"  class="questions">
+            <h2>Question three will be put here _________.</h2>
+            <div name="answer" class="select-answer" id="choice">
                 <option value="1">1.Answer</option>
                 <option value="2">2.Answer</option>
                 <option value="3">3.Answer</option>
                 <option value="4">4.Answer</option>
             </div>
+            <p id="correct"></p>
           </div>
-          <div hidden id="que4"  class="questions">
-            <h2>Question one will be put here _________.</h2>
-            <div name="choices" class="select-answer">
+          <div id="que4"  class="questions">
+            <h2>Question four will be put here _________.</h2>
+            <div name="answer" class="select-answer" id="choice">
                 <option value="1">1.Answer</option>
                 <option value="2">2.Answer</option>
                 <option value="3">3.Answer</option>
                 <option value="4">4.Answer</option>
             </div>
+            <p id="correct"></p>
+            </footer>
           </div>
-          <div hidden id="que5"  class="questions">
-            <h2>Question one will be put here _________.</h2>
-            <div name="choices" class="select-answer">
+          <div id="que5"  class="questions">
+            <h2>Question five will be put here _________.</h2>
+            <div name="answer" class="select-answer" id="choice">
                 <option value="1">1.Answer</option>
                 <option value="2">2.Answer</option>
                 <option value="3">3.Answer</option>
                 <option value="4">4.Answer</option>
             </div>
+                <p id="correct"></p>
           </div>
       </section>
 
       <!--Final Score form-->
       <section>
-          <form hidden>
+          <form>
               <h2>All Done!</h2>
               <p id="final-score"></p>
             <label for="initials">Enter Your Initials:</label> <!--accessibility-->
@@ -86,7 +91,7 @@
       </section>
 
       <!--Highscores-->
-      <section hidden class="hs"> 
+      <section class="hs"> 
           <h2>High Scores!</h2>
           <p id="highscores"></p>
           <button id="restart" class="btn">Go Back</button>

@@ -1,5 +1,6 @@
 var timerEl = document.getElementById('countdown');
-var startBtn = document.querySelector("#start");
+var chosenanswer = document.querySelector("#choice");
+
 
 var countdown = function() {
     var timeLeft = 75;
@@ -17,9 +18,20 @@ var countdown = function() {
   }, 1000);
 }
 
-function startquiz() {
+var runquestion2 = function() {
+    document.getElementById('que1').style.display = "none";
+    document.getElementById('que2').style.display = "block"; 
+}
+
+
+document.getElementById('start').onclick = function() {
+    //remove beginning page
+    document.getElementById('opening').style.display = "none";
+    //starts timer
     countdown();
-};
+    //brings up first question
+    document.getElementById('que1').style.display = "block";
+}
 
 
-startBtn.addEventListener("click", startquiz);
+chosenanswer.addEventListener("click", runquestion2);
