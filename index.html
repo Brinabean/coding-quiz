@@ -15,13 +15,82 @@
               <p id="countdown"></p>
       </header>
 
+      <!--Begginning screen/start-->
       <section class="centered">
           <h1>Coding Quiz Challenge</h1>
           <p>This challenge will give you multiple choice coding uestions to test your coding knowledge.
                Answer to the best of your ability and as quickly as possible as you will only have 75 
                seconds to answer as many questions as posible. When you are ready to begin click on "Start Quiz!".
           </p>
-          <button id="start">Start Quiz!</button>
+          <button class="btn" id="start">Start Quiz!</button>
+      </section>
+
+      <!--questions-->
+      <section>
+          <div hidden id="que1"  class="questions">
+            <h2>Question one will be put here _________.</h2>
+            <div name="choices" class="select-answer">
+                <option value="1">1.Answer</option>
+                <option value="2">2.Answer</option>
+                <option value="3">3.Answer</option>
+                <option value="4">4.Answer</option>
+            </div>
+          </div>
+          <div hidden id="que2"  class="questions">
+            <h2>Question one will be put here _________.</h2>
+            <div name="choices" class="select-answer">
+                <option value="1">1.Answer</option>
+                <option value="2">2.Answer</option>
+                <option value="3">3.Answer</option>
+                <option value="4">4.Answer</option>
+            </div>
+          </div>
+          <div hidden id="que3"  class="questions">
+            <h2>Question one will be put here _________.</h2>
+            <div name="choices" class="select-answer">
+                <option value="1">1.Answer</option>
+                <option value="2">2.Answer</option>
+                <option value="3">3.Answer</option>
+                <option value="4">4.Answer</option>
+            </div>
+          </div>
+          <div hidden id="que4"  class="questions">
+            <h2>Question one will be put here _________.</h2>
+            <div name="choices" class="select-answer">
+                <option value="1">1.Answer</option>
+                <option value="2">2.Answer</option>
+                <option value="3">3.Answer</option>
+                <option value="4">4.Answer</option>
+            </div>
+          </div>
+          <div hidden id="que5"  class="questions">
+            <h2>Question one will be put here _________.</h2>
+            <div name="choices" class="select-answer">
+                <option value="1">1.Answer</option>
+                <option value="2">2.Answer</option>
+                <option value="3">3.Answer</option>
+                <option value="4">4.Answer</option>
+            </div>
+          </div>
+      </section>
+
+      <!--Final Score form-->
+      <section>
+          <form hidden>
+              <h2>All Done!</h2>
+              <p id="final-score"></p>
+            <label for="initials">Enter Your Initials:</label> <!--accessibility-->
+            <input class="form-input" type="text" placeholder="Your Initials" name="initials" id="initials" />
+            <button class="btn" id="submitbtn">Submit</button>
+          </form>
+      </section>
+
+      <!--Highscores-->
+      <section hidden class="hs"> 
+          <h2>High Scores!</h2>
+          <p id="highscores"></p>
+          <button id="restart" class="btn">Go Back</button>
+          <button id="clear" class="btn">Clear Highscores</button>
       </section>
   </body>
     <script src="assets/js/script.js"></script>

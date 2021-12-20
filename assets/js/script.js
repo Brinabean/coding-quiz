@@ -6,7 +6,6 @@ var countdown = function() {
 
   // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
-    // As long as the `timeLeft` is greater than 1
     if (timeLeft > 0) {
       // Set the `textContent` of `timerEl` to show the remaining seconds
       timerEl.textContent = 'Time: ' + timeLeft;

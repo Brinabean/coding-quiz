@@ -1,6 +1,8 @@
 :root {
     --cl1: #c38fdf;
     --cl2: rgb(64, 56, 134);
+    --cl3: white;
+
 }
 
 body {
@@ -29,7 +31,8 @@ header {
 }
 
 /* beginning page */
-.centered {
+.centered,
+.questions, form, .hs {
     margin: 50px auto;
     width: 60%;
     align-items: center;
@@ -37,10 +40,67 @@ header {
     text-align: center;
 }
 
-button {
+.btn {
     background-color: var(--cl2);
     color: white;
     border-radius: 10px;
 }
 
+.btn:hover {
+    background-color: var(--cl1);
+}
 
+/*Questions*/
+
+.questions {
+    background-color: var(--cl3);
+    border-style: solid;
+}
+
+/*#que1 {
+    display: none;
+}
+
+#que2 {
+    display: none;
+}
+
+#que3 {
+    display: none;
+}
+
+#que4 {
+    display: none;
+}
+
+#que5 {
+    display: none;
+}*/
+
+.select-answer {
+    color: var(--cl3);
+    text-align: left;
+}
+
+.select-answer option {
+    border-style: solid;
+    border-radius: 10px;
+    background-color: var(--cl2);
+    padding: 10px;
+    margin: 10px;
+} 
+
+.select-answer option:hover {
+    background-color: var(--cl1);
+}
+
+.hs {
+    width: 30%;
+    text-align: left;
+}
+
+#highscores {
+    background-color: rgba(195, 143, 223, 0.2);
+    color: black;
+    width: 300px;
+}
