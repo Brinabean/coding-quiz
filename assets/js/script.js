@@ -1,5 +1,8 @@
 var timerEl = document.getElementById('countdown');
 var chosenanswer = document.querySelector("#choice");
+var startbtn = document.querySelector("#start");
+var answer = document.querySelector("#correct");
+
 
 
 var countdown = function() {
@@ -16,22 +19,67 @@ var countdown = function() {
         timerEl.textContent = 'Time: 0';
     }
   }, 1000);
+
 }
 
-var runquestion2 = function() {
+var showhighscores = function() {
+  event.preventDefault();
+  document.getElementById("highscores").style.display = "block";
+  document.getElementById('opening').style.display = "none";
+
+}
+
+var scoreForm = function() {
+  document.getElementById("finalscore").style.display = "block";
+
+  document.getElementById("submit").onclick = function() {
+      document.getElementById("finalscore").style.display = "none";
+      showhighscores();
+  }
+}
+
+
+var runquestion = function() {
     document.getElementById('que1').style.display = "none";
-    document.getElementById('que2').style.display = "block"; 
+    document.getElementById('que2').style.display = "block";
+
+    //var que1Input = document.getElementById("que1").value;
+    //if (que1Input == "3.alerts") {
+        //window.alert("Correct!")
+       //answer = "Correct!";
+    //}else {
+       //answer = "Wrong!";
+    //}
+    //console.log(que1Input);
+
+    document.getElementById("que2").onclick = function() {
+      document.getElementById("que2").style.display = "none";
+      document.getElementById("que3").style.display = "block";
+    }
+    document.getElementById("que3").onclick = function() {
+        document.getElementById("que3").style.display = "none";
+        document.getElementById("que4").style.display = "block";
+    }
+    document.getElementById("que4").onclick = function() {
+        document.getElementById("que4").style.display = "none";
+        document.getElementById("que5").style.display = "block";
+    }
+    document.getElementById("que5").onclick = function() {
+        document.getElementById("que5").style.display = "none";
+        scoreForm();
+    }
 }
 
+function runquiz() {
+   countdown();
+   document.getElementById('opening').style.display = "none";
+   document.getElementById('que1').style.display = "block";
 
-document.getElementById('start').onclick = function() {
-    //remove beginning page
-    document.getElementById('opening').style.display = "none";
-    //starts timer
-    countdown();
-    //brings up first question
-    document.getElementById('que1').style.display = "block";
-}
+   
+
+};
 
 
-chosenanswer.addEventListener("click", runquestion2);
+
+startbtn.addEventListener("click", runquiz);
+chosenanswer.addEventListener("click", runquestion);

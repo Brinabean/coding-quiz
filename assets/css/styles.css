@@ -29,7 +29,7 @@ header {
 
 /* beginning page */
 .centered,
-.questions, form, .hs {
+.questions, form {
     margin: 50px auto;
     width: 60%;
     align-items: center;
@@ -61,6 +61,7 @@ header {
 
 #que1 {
     display: none;
+    transition-delay: 1s;
 }
 
 #que2 {
@@ -85,38 +86,46 @@ header {
     text-align: left;
     padding: 5px;
 }
+
+.questions {
+    text-align: left;
+}
 .select-answer {
     color: var(--cl3);
     text-align: left;
-}
-
-.select-answer option {
     border-style: solid;
     border-radius: 10px;
     background-color: var(--cl2);
     padding: 10px;
     margin: 10px;
-} 
+}
 
-.select-answer option:hover {
+.select-answer:hover {
     background-color: var(--cl1);
 }
 
 /*Form*/
 
-form {
+#finalscore {
     display: none;
 }
 
 /*Highscores*/
 
-.hs {
-    width: 30%;
-    text-align: left;
+#highscores {
     display: none;
 }
 
-#highscores {
+.displayhs {
+    width: 30%;
+    text-align: left;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hs {
     background-color: rgba(195, 143, 223, 0.2);
     color: black;
     width: 300px;

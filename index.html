@@ -11,7 +11,7 @@
   <body>
       <header>
           <div>
-              <p id="view-hs">View high scores </p>
+              <p id="viewhs">View high scores </p>
               <p id="countdown"></p>
       </header>
 
@@ -27,75 +27,66 @@
 
       <!--questions-->
       <section>
-          <div id="que1"  class="questions">
-            <h2>Question one will be put here _________.</h2>
-            <div name="answer"class="select-answer" id="choice">
-                <option value="1">1.Answer</option>
-                <option value="2">2.Answer</option>
-                <option value="3">3.Answer</option>
-                <option value="4">4.Answer</option>
-            </div>
-          </div>
-          <div id="que2"  class="questions">
-            <h2>Question two will be put here _________.</h2>
-            <div name="answer" class="select-answer" id="choice">
-                <option value="1">1.Answer</option>
-                <option value="2">2.Answer</option>
-                <option value="3">3.Answer</option>
-                <option value="4">4.Answer</option>
-            </div>
-            <footer id="correct"></footer>
-          </div>
-          <div id="que3"  class="questions">
-            <h2>Question three will be put here _________.</h2>
-            <div name="answer" class="select-answer" id="choice">
-                <option value="1">1.Answer</option>
-                <option value="2">2.Answer</option>
-                <option value="3">3.Answer</option>
-                <option value="4">4.Answer</option>
-            </div>
+          <form id="que1" name="answerone" class="questions">
+            <p>Commonly used data types DO NOT include:</p>
+            <input class="select-answer" id="choice" type="button" value="1.strings" onclick="runquestion2()"><br>
+            <input class="select-answer" id="choice" type="button" value="2.booleans" onclick="runquestion2()"><br>
+            <input class="select-answer" id="choice" type="button" value="3.alerts" onclick="runquestion2()"><br>
+            <input class="select-answer" id="choice" type="button" value="4.numbers" onclick="runquestion2()"><br>
+          </form>
+          <form id="que2" name="answertwo" class="questions">
+            <p>The condition in an if/else statement is enclosed with _________.</p>
+            <input class="select-answer" id="choice" type="button" value="1.Quotes"><br>
+            <input class="select-answer" id="choice" type="button" value="2.Curly Brackets"><br>
+            <input class="select-answer" id="choice" type="button" value="3.Parenthesis"><br>
+            <input class="select-answer" id="choice" type="button" value="4.Square Brackets"><br>
             <p id="correct"></p>
-          </div>
-          <div id="que4"  class="questions">
-            <h2>Question four will be put here _________.</h2>
-            <div name="answer" class="select-answer" id="choice">
-                <option value="1">1.Answer</option>
-                <option value="2">2.Answer</option>
-                <option value="3">3.Answer</option>
-                <option value="4">4.Answer</option>
-            </div>
+          </form>
+          <form id="que3" name="answerthree" class="questions">
+            <p>Arrays in JavaScript can be used to store _________.</p>
+            <input class="select-answer" id="choice" type="button" value="1.Numbers and Strings"><br>
+            <input class="select-answer" id="choice" type="button" value="2.Other arrays"><br>
+            <input class="select-answer" id="choice" type="button" value="3.Booleans"><br>
+            <input class="select-answer" id="choice" type="button" value="4.All of the above"><br>
             <p id="correct"></p>
-            </footer>
-          </div>
-          <div id="que5"  class="questions">
-            <h2>Question five will be put here _________.</h2>
-            <div name="answer" class="select-answer" id="choice">
-                <option value="1">1.Answer</option>
-                <option value="2">2.Answer</option>
-                <option value="3">3.Answer</option>
-                <option value="4">4.Answer</option>
-            </div>
-                <p id="correct"></p>
-          </div>
+          </form>
+          <form id="que4" name="answerfour" class="questions">
+            <p>String values must be enclosed within ________ when being assigned to variables.</p>
+            <input class="select-answer" id="choice" type="button" value="1. Commas"><br>
+            <input class="select-answer" id="choice" type="button" value="2. Curly brackets"><br>
+            <input class="select-answer" id="choice" type="button" value="3.Quotes"><br>
+            <input class="select-answer" id="choice" type="button" value="4. Parenthesis"><br>
+            <p id="correct"></p>
+          </form>
+          <form id="que5" name="answerfive" class="questions">
+            <p>A very useful tool used during development and debugging for printing content to the debugger is:</p>
+            <input class="select-answer" id="choice" type="button" value="1. JavaScript"><br>
+            <input class="select-answer" id="choice" type="button" value="2.terminal/bash"><br>
+            <input class="select-answer" id="choice" type="button" value="3. for loops"><br>
+            <input class="select-answer" id="choice" type="button" value="4. console.log"><br>
+            <p id="correct"></p>
+          </form>
       </section>
 
       <!--Final Score form-->
       <section>
-          <form>
+          <form id="finalscore">
               <h2>All Done!</h2>
-              <p id="final-score"></p>
+              <p></p>
             <label for="initials">Enter Your Initials:</label> <!--accessibility-->
             <input class="form-input" type="text" placeholder="Your Initials" name="initials" id="initials" />
-            <button class="btn" id="submitbtn">Submit</button>
+            <button class="btn" id="submit">Submit</button>
           </form>
       </section>
 
       <!--Highscores-->
-      <section class="hs"> 
-          <h2>High Scores!</h2>
-          <p id="highscores"></p>
-          <button id="restart" class="btn">Go Back</button>
-          <button id="clear" class="btn">Clear Highscores</button>
+      <section>
+          <div id="highscores" class="displayhs">
+            <h2>High Scores!</h2>
+            <p class="hs"></p>
+            <button id="restart" class="btn">Go Back</button>
+            <button id="clear" class="btn">Clear Highscores</button>
+            </div>
       </section>
   </body>
     <script src="assets/js/script.js"></script>
