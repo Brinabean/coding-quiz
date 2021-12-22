@@ -1,7 +1,7 @@
 var timerEl = document.getElementById('countdown');
 var chosenanswer = document.querySelector("#choice");
 var startbtn = document.querySelector("#start");
-var answer = document.querySelector("#correct");
+//var answer = document.querySelector("#correct");
 
 
 
